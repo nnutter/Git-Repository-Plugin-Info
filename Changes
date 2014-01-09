@@ -2,5 +2,7 @@ Revision history for Perl extension Git-Repository-Plugin-Ref
 
 {{$NEXT}}
 
+0.01 2014-01-09T04:05:27Z
+
     - Initial release with has_ref, has_branch, and has_tag.
 
