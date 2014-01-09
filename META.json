@@ -1,7 +1,7 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Check existence of refs using Git::Repository",
    "author" : [
-      "Nathaniel Nutter <iam@nnutter.com>"
+      "Nathaniel Nutter <nnutter@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v0.11.0, CPAN::Meta::Converter version 2.133380",
@@ -43,6 +43,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Git::Repository" : "1.14",
             "perl" : "5.008005"
          }
       },
@@ -53,5 +54,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/nnutter/Git-Repository-Plugin-Ref/issues"
+      },
+      "homepage" : "https://github.com/nnutter/Git-Repository-Plugin-Ref",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/nnutter/Git-Repository-Plugin-Ref.git",
+         "web" : "https://github.com/nnutter/Git-Repository-Plugin-Ref"
+      }
+   },
    "version" : "0.01"
 }
