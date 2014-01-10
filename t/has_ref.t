@@ -4,7 +4,7 @@ use warnings;
 use File::Spec qw();
 use IO::File qw();
 
-use Git::Repository qw(Ref);
+use Git::Repository qw(Info);
 use Test::Git qw(test_repository);
 
 use Test::More tests => 4;

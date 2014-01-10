@@ -1,4 +1,4 @@
-package Git::Repository::Plugin::Ref;
+package Git::Repository::Plugin::Info;
 use parent qw(Git::Repository::Plugin);
 
 use 5.008005;
@@ -52,11 +52,11 @@ __END__
 
 =head1 NAME
 
-Git::Repository::Plugin::Ref - Check existence of refs using Git::Repository
+Git::Repository::Plugin::Info - Check existence of refs using Git::Repository
 
 =head1 SYNOPSIS
 
-    use Git::Repository 'Ref';
+    use Git::Repository 'Info';
 
     my $r = Git::Repository->new();
 
