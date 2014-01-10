@@ -8,10 +8,16 @@ use warnings;
 our $VERSION = "0.01";
 
 sub _keywords { qw(
+    is_bare
     has_ref
     has_branch
     has_tag
 ) }
+
+sub is_bare {
+    my $repo = shift;
+    return _bool_config($repo, 'core.bare');
+}
 
 sub has_ref {
     my $repo = shift;
@@ -44,6 +50,13 @@ sub has_tag {
     return $repo->has_ref($tag_name);
 }
 
+sub _bool_config {
+    my $repo = shift;
+    my $key = shift;
+    my $bare = $repo->run('config', '--bool', $key);
+    return ($bare eq 'true');
+}
+
 1;
 
 __END__
@@ -52,7 +65,7 @@ __END__
 
 =head1 NAME
 
-Git::Repository::Plugin::Info - Check existence of refs using Git::Repository
+Git::Repository::Plugin::Info - Information about a Git::Repository
 
 =head1 SYNOPSIS
 
@@ -60,6 +73,7 @@ Git::Repository::Plugin::Info - Check existence of refs using Git::Repository
 
     my $r = Git::Repository->new();
 
+    $r->is_bare();
     $r->has_tag('some_tag');
     $r->has_branch('some_branch');
 
@@ -69,6 +83,10 @@ Adds several methods to L<Git::Repository> objects to check if a Git reference
 exists.
 
 =head1 METHODS
+
+=head2 is_bare()
+
+Check if repository is a bare repository.
 
 =head2 has_ref($ref_name)
 
