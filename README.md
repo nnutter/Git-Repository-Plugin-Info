@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/nnutter/Git-Repository-Plugin-Ref.png?branch=master)](https://travis-ci.org/nnutter/Git-Repository-Plugin-Ref)
+[![Build Status](https://travis-ci.org/nnutter/Git-Repository-Plugin-Info.png?branch=master)](https://travis-ci.org/nnutter/Git-Repository-Plugin-Info)
 # NAME
 
-Git::Repository::Plugin::Info - Check existence of refs using Git::Repository
+Git::Repository::Plugin::Info - Information about a Git::Repository
 
 # SYNOPSIS
 
@@ -9,6 +9,7 @@ Git::Repository::Plugin::Info - Check existence of refs using Git::Repository
 
     my $r = Git::Repository->new();
 
+    $r->is_bare();
     $r->has_tag('some_tag');
     $r->has_branch('some_branch');
 
@@ -18,6 +19,10 @@ Adds several methods to [Git::Repository](https://metacpan.org/pod/Git::Reposito
 exists.
 
 # METHODS
+
+## is\_bare()
+
+Check if repository is a bare repository.
 
 ## has\_ref($ref\_name)
 

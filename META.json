@@ -1,5 +1,5 @@
 {
-   "abstract" : "Check existence of refs using Git::Repository",
+   "abstract" : "Information about a Git::Repository",
    "author" : [
       "Nathaniel Nutter <nnutter@cpan.org>"
    ],
@@ -56,13 +56,13 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/nnutter/Git-Repository-Plugin-Ref/issues"
+         "web" : "https://github.com/nnutter/Git-Repository-Plugin-Info/issues"
       },
-      "homepage" : "https://github.com/nnutter/Git-Repository-Plugin-Ref",
+      "homepage" : "https://github.com/nnutter/Git-Repository-Plugin-Info",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/nnutter/Git-Repository-Plugin-Ref.git",
-         "web" : "https://github.com/nnutter/Git-Repository-Plugin-Ref"
+         "url" : "git://github.com/nnutter/Git-Repository-Plugin-Info.git",
+         "web" : "https://github.com/nnutter/Git-Repository-Plugin-Info"
       }
    },
    "version" : "0.01"
