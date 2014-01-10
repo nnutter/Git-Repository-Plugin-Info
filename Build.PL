@@ -23,8 +23,8 @@ my %args = (
         'Module::Build' => 0.38,
     },
 
-    name            => 'Git-Repository-Plugin-Ref',
-    module_name     => 'Git::Repository::Plugin::Ref',
+    name            => 'Git-Repository-Plugin-Info',
+    module_name     => 'Git::Repository::Plugin::Info',
     allow_pureperl => 0,
 
     script_files => [glob('script/*'), glob('bin/*')],

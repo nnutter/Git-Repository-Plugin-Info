@@ -1,11 +1,11 @@
 [![Build Status](https://travis-ci.org/nnutter/Git-Repository-Plugin-Ref.png?branch=master)](https://travis-ci.org/nnutter/Git-Repository-Plugin-Ref)
 # NAME
 
-Git::Repository::Plugin::Ref - Check existence of refs using Git::Repository
+Git::Repository::Plugin::Info - Check existence of refs using Git::Repository
 
 # SYNOPSIS
 
-    use Git::Repository 'Ref';
+    use Git::Repository 'Info';
 
     my $r = Git::Repository->new();
 
