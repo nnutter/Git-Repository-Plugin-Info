@@ -1,10 +1,13 @@
 use strict;
 use warnings;
 
-use Test::Git qw(test_repository);
+use Test::Git qw(has_git test_repository);
 use Git::Repository qw(Info);
 
-use Test::More tests => 2;
+use Test::More;
+
+has_git();
+plan tests => 2;
 
 do {
     my $repo = test_repository();

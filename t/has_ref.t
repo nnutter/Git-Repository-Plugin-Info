@@ -5,9 +5,12 @@ use File::Spec qw();
 use IO::File qw();
 
 use Git::Repository qw(Info);
-use Test::Git qw(test_repository);
+use Test::Git qw(has_git test_repository);
 
-use Test::More tests => 4;
+use Test::More;
+
+has_git();
+plan tests => 4;
 
 do {
     my $repo = test_repository();
