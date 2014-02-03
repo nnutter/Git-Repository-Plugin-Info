@@ -11,6 +11,8 @@ use Test::More tests => 4;
 
 do {
     my $repo = test_repository();
+    $repo->run('config', 'user.name', 'Nathaniel Nutter');
+    $repo->run('config', 'user.email', 'nnutter@cpan.org');
     commit_readme($repo);
 
     subtest 'branch does not exist yet' => sub {
