@@ -5,11 +5,12 @@ use File::Spec qw();
 use IO::File qw();
 
 use Git::Repository qw(Info);
-use Test::Git qw(has_git test_repository);
+use Test::Git qw(test_repository);
+use Test::Requires::Git;
 
 use Test::More;
 
-has_git();
+test_requires_git();
 plan tests => 4;
 
 do {
