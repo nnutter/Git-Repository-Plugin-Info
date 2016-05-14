@@ -2,6 +2,8 @@ Revision history for Perl extension Git-Repository-Plugin-Ref
 
 {{$NEXT}}
 
+    - Updated testing dependencies.
+
 0.03 2014-02-03T05:51:19Z
 
     - Skip tests if Git is not installed.
