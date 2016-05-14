@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/nnutter/Git-Repository-Plugin-Info.png?branch=master)](https://travis-ci.org/nnutter/Git-Repository-Plugin-Info)
+[![Build Status](https://travis-ci.org/nnutter/Git-Repository-Plugin-Info.svg?branch=master)](https://travis-ci.org/nnutter/Git-Repository-Plugin-Info)
 # NAME
 
 Git::Repository::Plugin::Info - Information about a Git::Repository
