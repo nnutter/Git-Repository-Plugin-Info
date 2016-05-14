@@ -24,4 +24,5 @@ cover_db/
 
 MYMETA.*
 
-/Git-Repository-Plugin-Ref-*
+/Git-Repository-Plugin-Info-*
+/cpanfile.snapshot
